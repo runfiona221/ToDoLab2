@@ -1,0 +1,49 @@
+
+
+@mixin fonts {
+
+  .container.fixed();
+}
+
+body {
+  background-color: #E2F3F7;
+  @include fonts;
+}
+jumbotron {
+text-align: center;
+}
+.container {
+  width: 1025px;
+}
+
+
+
+h1 {
+  text-align: center;
+  @include fonts;
+
+
+}
+
+   .item-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 2s;
+}
+
+.item {
+  display: block;
+  padding: 5px;
+
+
+}
+@media(min-width: 600px) {
+  .item-list {
+
+  }
+  .item {
+    display: inline;
+  }
+
+}
